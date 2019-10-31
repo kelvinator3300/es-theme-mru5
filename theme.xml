@@ -1,0 +1,571 @@
+<!--
+theme name:		mru5
+version:		1.0
+author:			kelvinator3300
+license:		to ill
+It's free. Completely free. Public Domain. Do whatever you want with it.
+If I owe you some credit for something in this theme, please let me know.
+I think I copied the platform folders from ES-Theme-Spare. I edited some
+of the svg logo files and made pngs of them. ES-Theme-Spare certainly
+was the greatest teacher.
+-->
+
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system, basic, detailed, video, grid">
+
+		<image name="background" extra="true">
+			<path>./_inc/images/bg.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>0000ff</color>
+		</image>
+
+		<image name="background_help" extra="true">
+			<path>./_inc/images/color.png</path>
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.03</size>
+			<color>000000</color>
+		</image>
+
+		<helpsystem name="help">
+			<textColor>909090</textColor>
+			<iconColor>909090</iconColor>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.998</pos>
+			<fontSize>0.018</fontSize>
+		</helpsystem>
+
+	</view>
+
+	<feature supported="carousel">
+
+		<view name="system">
+
+		<text name="logoText">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>ffff00</color>
+			<text>${system.fullName}</text>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+			<lineSpacing>1</lineSpacing>
+			<fontSize>0.06</fontSize>
+		</text>
+
+			<carousel name="systemcarousel">
+				<type>vertical</type>
+				<color>00000000</color>
+				<logoSize>0.4 0.18</logoSize>
+				<logoScale>1.2</logoScale>
+				<maxLogoCount>5</maxLogoCount>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.49</pos>
+				<size>0.5 1</size>
+			</carousel>
+		
+			<text name="systemInfo">
+				<color>ff00ff</color>
+				<fontSize>0.02</fontSize>
+				<origin>0.5 1</origin>
+				<pos>0.5 0.6</pos>
+				<size>0.5 0.03</size>
+			</text>
+
+			<image name="carouselbg" extra="true">
+				<color>000000bb</color>
+				<path>./_inc/images/color.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.5</pos>
+				<size>0.5 1</size>
+			</image>
+
+			<image name="background_gamelist" extra="true">
+				<path>./_inc/images/color.png</path>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.5</pos>
+				<size>1 0.2</size>
+				<color>000000</color>
+			</image>
+
+			<image name="topline" extra="true">
+				<path>./_inc/images/gradient.png</path>
+				<origin>0 0</origin>
+				<pos>0 0.39</pos>
+				<size>1 0.025</size>
+				<color>ff00ff</color>
+			</image>
+
+			<image name="bottomline" extra="true">
+				<path>./_inc/images/gradient.png</path>
+				<origin>0 0</origin>
+				<pos>0 0.59</pos>
+				<size>1 0.025</size>
+				<color>ff00ff</color>
+			</image>
+
+		</view>
+	
+	</feature>
+
+	<view name="basic">
+
+		<text name="logoText">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>ffff00</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.1</pos>
+			<size>0.58 0.16</size>
+			<fontSize>0.06</fontSize>
+			<text>${system.fullName}</text>
+			<alignment>center</alignment>
+			<lineSpacing>1</lineSpacing>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+		<image name="bottomline" extra="true">
+			<path>./_inc/images/gradient.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.69</pos>
+			<size>1 0.025</size>
+			<color>ff00ff</color>
+		</image>
+
+		<image name="background_gamelist" extra="true">
+			<path>./_inc/images/color.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>0.6 1</size>
+			<color>000000</color>
+		</image>
+
+		<image name="topline" extra="true">
+			<path>./_inc/images/gradient.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.19</pos>
+			<size>1 0.025</size>
+			<color>ff00ff</color>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>FFFF00</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>00FFFF</secondaryColor>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.205</pos>
+			<size>0.58 0.78</size>
+			<fontSize>0.028</fontSize>
+			<forceUppercase>true</forceUppercase>
+		</textlist>
+
+	</view>
+
+	<view name="grid">
+
+		<text name="logoText">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>ffff00</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.06</pos>
+			<size>1 0.08</size>
+			<fontSize>0.06</fontSize>
+			<text>${system.fullName}</text>
+			<alignment>center</alignment>
+			<lineSpacing>1</lineSpacing>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+		<image name="nameBackground" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000ff</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.14</pos>
+			<size>1 0.058</size>
+		</image>
+
+		<text name="md_name">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.138</pos>
+			<fontSize>0.042</fontSize>
+			<color>ffff00ff</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+		<imagegrid name="gamegrid">
+			<pos>0.168 0.2388</pos>
+			<size>0.88 0.6596</size>
+			<margin>0.06 0.06</margin>
+		</imagegrid>
+		<gridtile name="default">
+			<size>0.18 0.18</size>
+			<padding>6 6</padding>
+			<backgroundImage>./_inc/images/tile.png</backgroundImage>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<backgroundColor>ff00ffff</backgroundColor>
+			<imageColor>ffffffff</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<size>0.28 0.28</size>
+			<padding>6 6</padding>
+			<backgroundImage>./_inc/images/tile.png</backgroundImage>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<backgroundColor>ffff00ff</backgroundColor>
+			<imageColor>ffffffff</imageColor>
+		</gridtile>
+
+	</view>
+
+	<view name="detailed, video">
+
+		<text name="logoText">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>ffff00</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.24 0.09</pos>
+			<size>0.41 0.16</size>
+			<fontSize>0.06</fontSize>
+			<text>${system.fullName}</text>
+			<alignment>center</alignment>
+			<lineSpacing>1</lineSpacing>
+			<forceUppercase>true</forceUppercase>
+		</text>
+
+		<image name="bottomline" extra="true">
+			<path>./_inc/images/gradient.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.72</pos>
+			<size>1 0.025</size>
+			<color>ff00ff</color>
+		</image>
+
+		<image name="background_gamelist" extra="true">
+			<path>./_inc/images/color.png</path>
+			<origin>0.5 0</origin>
+			<pos>0.24 0</pos>
+			<size>0.41 1</size>
+			<color>000000</color>
+		</image>
+
+		<image name="topline" extra="true">
+			<path>./_inc/images/gradient.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.17</pos>
+			<size>1 0.025</size>
+			<color>ff00ff</color>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>FFFF00</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>00FFFF</secondaryColor>
+			<origin>0.5 0</origin>
+			<pos>0.239 0.2</pos>
+			<size>0.39 0.78</size>
+			<fontSize>0.028</fontSize>
+			<alignment>center</alignment>
+			<forceUppercase>true</forceUppercase>
+		</textlist>
+
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+			<color>dddddd</color>
+			<forceUppercase>true</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.13 0.01</size>
+		</text>
+
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+			<color>dddddd</color>
+			<forceUppercase>true</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.13 0.01</size>
+		</text>
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>dddddd</color>
+			<forceUppercase>true</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<size>0.13 0.01</size>
+		</datetime>
+
+		<text name="md_lbl_rating">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_players">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_genre">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_developer">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_publisher">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_releasedate">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_playcount">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_playcount">
+			<pos>1 1</pos>
+		</text>
+
+		<text name="md_lbl_lastplayed">
+			<pos>1 1</pos>
+		</text>
+
+		<datetime name="md_lastplayed">
+			<pos>1 1</pos>
+		</datetime>
+		
+		<image name="pub1" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.47 0.76</pos>
+			<size>0.245 0.08</size>
+		</image>
+		<image name="pub2" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>0000aa</color>
+			<pos>0.472 0.764</pos>
+			<size>0.24 0.074</size>
+		</image>
+		<text name="pubLbl" extra="true">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>000000</color>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 0</origin>
+			<pos>0.5925 0.762</pos>
+			<text>published</text>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+		</text>
+		<image name="pub3" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.4745 0.795</pos>
+			<size>0.2345 0.036</size>
+		</image>
+		<datetime name="md_releasedate">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>808080</color>
+			<origin>0 0</origin>
+			<alignment>left</alignment>
+			<fontSize>0.025</fontSize>
+			<format>%Y</format>
+			<pos>0.48 0.81</pos>
+		</datetime>
+		<text name="md_publisher">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<origin>1 0</origin>
+			<color>808080</color>
+			<origin>0 0</origin>
+			<alignment>right</alignment>
+			<fontSize>0.025</fontSize>
+			<pos>0.57 0.81</pos>
+		</text>
+
+		<image name="dev1" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.725 0.76</pos>
+			<size>0.245 0.08</size>
+		</image>
+		<image name="dev2" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>0000aa</color>
+			<pos>0.727 0.764</pos>
+			<size>0.24 0.074</size>
+		</image>
+		<text name="devLbl" extra="true">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>000000</color>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 0</origin>
+			<pos>0.84 0.762</pos>
+			<text>developer</text>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+		</text>
+		<image name="dev3" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.7295 0.795</pos>
+			<size>0.2345 0.036</size>
+		</image>
+		<text name="md_developer">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<origin>0.5 0.5</origin>
+			<color>808080</color>
+			<origin>0.5 0</origin>
+			<alignment>center</alignment>
+			<fontSize>0.025</fontSize>
+			<pos>0.84 0.81</pos>
+		</text>
+
+		<image name="genre1" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.47 0.86</pos>
+			<size>0.245 0.08</size>
+		</image>
+		<image name="genre2" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>0000aa</color>
+			<pos>0.472 0.8625</pos>
+			<size>0.24 0.074</size>
+		</image>
+		<text name="genreLbl" extra="true">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>000000</color>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 0</origin>
+			<pos>0.5925 0.862</pos>
+			<text>genre</text>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+		</text>
+		<image name="genre3" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.4745 0.8935</pos>
+			<size>0.2345 0.036</size>
+		</image>
+		<text name="md_genre">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<origin>1 0</origin>
+			<color>808080</color>
+			<origin>0.5 0.5</origin>
+			<alignment>center</alignment>
+			<fontSize>0.025</fontSize>
+			<pos>0.5925 0.914</pos>
+			<size>0.23 0.02</size>
+		</text>
+
+		<image name="rating1" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.725 0.86</pos>
+			<size>0.1175 0.08</size>
+		</image>
+		<image name="rating2" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>0000aa</color>
+			<pos>0.727 0.8625</pos>
+			<size>0.1125 0.074</size>
+		</image>
+		<text name="ratingLbl" extra="true">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>000000</color>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 0</origin>
+			<pos>0.785 0.862</pos>
+			<text>rating</text>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+		</text>
+		<image name="rating3" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.7295 0.8935</pos>
+			<size>0.1075 0.036</size>
+		</image>
+		<text name="md_rating">
+			<origin>0.5 0.5</origin>
+			<color>808080</color>
+			<origin>0 0</origin>
+			<alignment>center</alignment>
+			<size>0.1 0.014</size>
+			<pos>0.738 0.905</pos>
+		</text>
+
+		<image name="players1" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.8525 0.86</pos>
+			<size>0.1175 0.08</size>
+		</image>
+		<image name="players2" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>0000aa</color>
+			<pos>0.8545 0.8625</pos>
+			<size>0.1125 0.074</size>
+		</image>
+		<text name="playersLbl" extra="true">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<color>000000</color>
+			<fontSize>0.025</fontSize>
+			<origin>0.5 0</origin>
+			<pos>0.9105 0.862</pos>
+			<text>players</text>
+			<forceUppercase>true</forceUppercase>
+			<alignment>center</alignment>
+		</text>
+		<image name="players3" extra="true">
+			<path>./_inc/images/color.png</path>
+			<color>000000</color>
+			<pos>0.857 0.8935</pos>
+			<size>0.1075 0.036</size>
+		</image>
+		<text name="md_players">
+			<fontPath>./_inc/fonts/topic-bold.ttf</fontPath>
+			<origin>0.5 0.5</origin>
+			<color>808080</color>
+			<origin>0.5 0</origin>
+			<alignment>center</alignment>
+			<fontSize>0.025</fontSize>
+			<pos>0.9105 0.91</pos>
+		</text>
+
+		<text name="md_description">
+			<pos>1 1</pos>
+			<size>0.27 0.225</size>
+			<color>dddddd</color>
+			<fontSize>0.02</fontSize>
+			<alignment>left</alignment>
+			<forceUppercase>1</forceUppercase>
+			<lineSpacing>1.5</lineSpacing>
+		</text>
+
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.72 0.458</pos>
+			<maxSize>0.5 0.5</maxSize>
+		</image>
+
+	</view>
+
+	<feature supported="video">
+	<view name="video">
+
+		<image name="md_marquee">
+			<pos>0.72 0.09</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.32 0.14</maxSize>
+		</image>
+
+ 		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.72 0.458</pos>
+			<maxSize>0.5 0.5</maxSize>
+			<delay>2</delay>
+			<default></default>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+		</video>
+	</view>
+	</feature>
+
+</theme>
